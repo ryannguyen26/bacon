@@ -1,9 +1,23 @@
-This dataset is from the Department of Veteran Affairs that include studies related to PTSD (Post-Traumatic Stress Disorder). The data stems from various research publications differentiated by unique study IDs.
+Link to dataset: https://ptsd-va.data.socrata.com/PTSD-Repository/Sample-Characteristics/yd5e-48pf/data_preview
+
+Data Last Updated
+August 25, 2023
+
+Metadata Last Updated
+September 6, 2023
+
+# Combatting PTSD using Data Analytics
+
+### Data Origin, Collection and Extraction
+
+This dataset is from the Department of Veteran Affairs that include studies related to PTSD **(Post-Traumatic Stress Disorder)**. The data stems from various research publications differentiated by unique study IDs.
 
 The data was collected from published studies on PTSD treatments. This involves systematic literature review processes, where researchers identify, select, and aggregate data from relevant research studies or clinical trials that meet predefined inclusion criteria.
 
 Data extraction might have been done manually by researchers reading through each study and recording relevant information, or through automated means using text mining and data extraction tools that can process research articles to extract predefined data points.
 
+
+### Data Programming, Transformation and Units of Measure
 Without specific documentation, it's unclear which program was used. Data cleaning can be done using various software tools or programming languages that are commonly used in data science, such as Python and R. However, in this scenario I believe that from the study themselves, understanding the process of scientific method the entries were already filtered to minimize additional 'cleaning'.
 
 The data could've been cleaned and/or transformed by removing duplicate entries or studies. In addition, Standardizing the format of study IDs, publication years, and other categorical or textual data.
@@ -15,6 +29,7 @@ N Randomized: The count of participants (unitless, simply a count).
 PTSD Criteria Met at Baseline Percent: Percentage (a proportion from 0 to 1, often displayed as a percentage).
 PTSD Severity at Baseline Mean: Likely based on the scale used for measurement (e.g., scores from PTSD assessment tools like CAPS-5, PCL-C, which have their own scoring systems).
 
+### Formulas, Validation, and Definitions
 The formulas used in the column creation is included it their title. For example, in the 'Age Mean' column, mean scores might be calculated using the sum of all scores divided by the number of scores.
 Another example, in the 'PTSD Criteria Met at Baseline Percent' Percentages (e.g., for criteria met at baseline) could be calculated by dividing the number of participants meeting certain criteria by the total number of participants and multiplying by 100
 
@@ -34,6 +49,8 @@ PTSD Severity at Baseline Definition: The specific instrument or method used to 
 PTSD Severity at Baseline Mean: The average severity score of PTSD symptoms among participants at baseline.
 For the full 79 columns, the definitions would similarly align with the specific aspects of the study they represent, from detailed methodological notes (e.g., criteria for inclusion, details on measurement tools) to outcomes and demographic information. Specific variable options (e.g., for categorical data like "Risk of Bias Rating") would be defined based on the study's methodology, potentially including categories like "Low," "Moderate," and "High" risk of bias.
 
+
+### Variable Options, Regulations, and References
 Set variable options might include categorical data like Study Class or Risk of Bias Rating, with predefined options such as:
 Study Class: Could include categories like Pharmacotherapy, Psychotherapy, indicating the type of treatment studied.
 Risk of Bias Rating: Levels might include "Low," "Some Concerns," "High," indicating the assessed risk of bias in the study's findings.
